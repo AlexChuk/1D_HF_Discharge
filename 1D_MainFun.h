@@ -1,0 +1,55 @@
+# include <stdio.h>
+# include <math.h>
+# include <string.h>
+# include <stdlib.h>
+//# include <algorithm>
+
+# include "Initials.h"
+# include "1Dmesh.h"
+# include "1DPoisson.h"
+# include "1DTransport.h"
+# include "Chemistry_calc.h"
+# include "EEDF_calc.h"
+# include "Gas_calc.h"
+
+#ifndef MAINFUN_H
+#define MAINFUN_H
+
+# define LEN 200  //dots per axis
+# define Nmax 20
+# define CSmax 100
+# define NRmax 200
+
+const double
+	pi = 3.141592653589,
+	c = 2.997924562e+10,
+	ma = 1.67e-24,//[г]
+	me = 9.1e-28,//[г]
+	e = 4.8e-10,//[СГС]
+	eKl = 1.60217662e-19,//[Кл]
+	Eabs = 300,//E[В/см]=300E[абс.СГС]
+	Na = 6.022e+23,
+	kb = 1.38e-16,
+	eV_K = 11605,//1 эВ в кельвинах К
+	p0 = 1333.22, // коэф-т перевода Торр --> СГС [эрг/см^3]
+	exact = 1.0e-3,//точность счета
+    cm_eV = 8065.5447;//коэф-т перевода cm-1 --> эВ
+
+
+extern int NR,Ndots;//N,Nt,Nte,Nchem,Nedf,Ndots,
+extern char Spec[Nmax][10],Spec_R[Nmax][10];
+extern double Mi[Nmax],HCpSi[3][Nmax],CXi[Nmax][2][8];
+extern double Emax,dE,dEev;
+extern char Geom[10];
+extern double Len,l[LEN+3],Hght;
+extern double Gamma[Nmax][2],Tw;
+extern double CDi[Nmax][25],CMui[Nmax];
+extern char CSFile[50],ChemFile[50],EedfTblFl[50];
+extern char RName[NRmax][100];
+
+bool converge(double *,double *,double);
+int sign(double);
+double LENintegral(double *,char *);
+double LENaverage(double *,char *);
+
+#endif

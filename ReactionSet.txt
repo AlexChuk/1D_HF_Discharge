@@ -1,0 +1,123 @@
+------------------------------------------------------------
+
+EEDF_Reactions
+
+------------------------------------------------------------
+R1	 e	 + O	 ->	 e	 + O[1D] ;	EEDF	//see_CS-set
+R2	 e	 + O[1D]	 ->	 e	 + O ;	EEDF	//see_CS-set
+R3	 e	 + O	 ->	 e	 + O[1S] ;	EEDF	//see_CS-set
+R4	 e	 + O[1S]	 ->	 e	 + O ;	EEDF	//see_CS-set
+R5	 e	 + O2	 ->	 e	 + O2[a] ;	EEDF	//see_CS-set
+R6	 e	 + O2[a]	 ->	 e	 + O2 ;	EEDF	//see_CS-set
+R7	 e	 + O2	 ->	 e	 + O2[b] ;	EEDF	//see_CS-set
+R8	 e	 + O2[b]	 ->	 e	 + O2 ;	EEDF	//see_CS-set
+R9	 e	 + O2[a]	 ->	 e	 + O2[b] ;	EEDF	//see_CS-set
+R10	 e	 + O2[b]	 ->	 e	 + O2[a] ;	EEDF	//see_CS-set
+R11	 e	 + O2	 ->	 e	 + O2[Hz] ;	EEDF	//see_CS-set
+R12	 e	 + O2[Hz]	 ->	 e	 + O2 ;	EEDF	//see_CS-set
+R13	 e	 + O2	 ->	 e	 + O	 + O ;	EEDF	//see_CS-set
+R14	 e	 + O2	 ->	 e	 + O	 + O[1D] ;	EEDF	//see_CS-set
+R15	 e	 + O2	 ->	 e	 + O	 + O[1S] ;	EEDF	//see_CS-set
+R16	 e	 + O2	 ->	 O	 + O- ;	EEDF	//see_CS-set
+R17	 e	 + O2	 ->	  O2+	 + e	 + e	 ;	EEDF	//see_CS-set
+R18	 e	 + O	 ->	  O+	 + e	 + e	 ;	EEDF	//see_CS-set
+R19	 e	 + O2	 ->	  O2+	 + e	 + e	 ;	EEDF	//see_CS-set
+
+------------------------------------------------------------
+
+Oxygen_Reactions_with_Ions
+
+------------------------------------------------------------
+R20	e	+	O2	+	O2	->	O2-	+	O2	;	Te	4.200e-027	-1.000	600.000	//ref
+R21	e	+	O2	+	O3	->	O3-	+	O2	;	Te	4.600e-028	0.000	0.000	//ref
+R22	e	+	O2+	->	O	+	O	;	Te	2.420e-006	-0.550	0.000	//ref
+R23	e	+	O2+	->	O	+	O[1D]	;	Te	2.180e-006	-0.550	0.000	//ref
+R24	e	+	O2+	->	O	+	O[1S]	;	Te	2.420e-007	-0.550	0.000	//ref
+R25	e	+	O4+	->	O2	+	O2	;	Te	2.420e-005	-0.500	0.000	//ref
+R26	e	+	O3+	->	O	+	O2	;	Te	1.000e-007	0.000	0.000	//ref
+R27	O-	+	O	->	O2	+	e	;	Tgas	2.000e-010	0.000	0.000	//Proshina_2005
+R28	O-	+	O2[a]	->	O3	+	e	;	Tgas	1.000e-010	0.000	0.000	//ref
+R29	O-	+	O2[a]	->	O2-	+	O	;	Tgas	3.300e-011	0.000	0.000	//Ivanov_2000
+R30	O-	+	O2	->	O2-	+	O	;	Tgas	4.000e-010	0.000	11600.000	//ref
+R31	O-	+	O2	->	O	+	O2	+	e	;	Tgas	0.000e+000	0.000	0.000	//Proshina_2005
+R32	O-	+	O2	->	O3	+	e	;	Tgas	0.000e+000	0.000	0.000	//Proshina_2005
+R33	O2-	+	O	->	O3	+	e	;	Tgas	1.500e-010	0.000	0.000	//Proshina_2005
+R34	O2-	+	O	->	O-	+	O2	;	Tgas	3.300e-010	0.000	0.000	//ref
+R35	O2-	+	O2[a]	->	O2	+	O2	+	e	;	Tgas	2.000e-010	0.000	0.000	//Proshina_2005
+R36	O2-	+	O2	->	O2	+	O2	+	e	;	Tgas	4.000e-010	0.000	5106.000	//ref
+R37	O-	+	O2+	->	O2	+	O	;	Tgas	1.600e-006	-0.500	0.000	//ref
+R38	O-	+	O+	->	O2	;	Tgas	2.700e-007	0.000	0.000	//ref
+R39	O-	+	O3+	->	O2	+	O2	;	Tgas	1.000e-007	0.000	0.000	//ref
+R40	O-	+	O4+	->	O2	+	O3	;	Tgas	6.900e-006	-0.500	0.000	//ref
+R41	O-	+	O2+	+	O2	->	O3	+	O2	;	Tgas	2.000e-025	0.000	0.000	//ref
+R42	O-	+	O2+	+	O2	->	O	+	O2	+	O2	;	Tgas	4.000e-026	0.000	0.000	//ref
+R43	O2-	+	O+	->	O	+	O2	;	Tgas	6.900e-006	-0.500	0.000	//ref
+R44	O2-	+	O+	->	O2	+	O2	;	Tgas	6.900e-006	-0.500	0.000	//ref
+R45	O2-	+	O2+	+	O2	->	O2	+	O2	+	O2	;	Tgas	2.000e-025	0.000	0.000	//ref
+R46	O2-	+	O4+	+	O2	->	O2	+	O2	+	O2	+	O2	;	Tgas	4.000e-026	0.000	0.000	//ref
+R47	O2-	+	O4+	->	O2	+	O2	+	O2	;	Tgas	1.000e-007	0.000	0.000	//ref
+R48	O3-	+	O2+	->	O2	+	O3	;	Tgas	2.000e-007	0.000	0.000	//ref
+R49	O3-	+	O4+	->	O	+	O2	+	O2	+	O2	;	Tgas	1.000e-007	0.000	0.000	//ref
+R50	O+	+	O2	->	O2+	+	O	;	Tgas	2.000e-011	0.000	0.000	//ref
+R51	O-	+	O3	->	O	+	O3-	;	Tgas	5.300e-010	0.000	0.000	//ref
+R52	O-	+	O2	+	O2	->	O3-	+	O2	;	Tgas	3.300e-028	-1.000	0.000	//ref
+R53	O2-	+	O3	->	O3-	+	O2	;	Tgas	4.000e-010	0.000	0.000	//ref
+R54	O2-	+	O2	+	O2	->	O4-	+	O2	;	Tgas	0.000e+000	-2.000	0.000	//ref
+R55	O2+	+	O2	+	O2	->	O4+	+	O2	;	Tgas	1.250e-026	-1.500	0.000	//ref
+R56	O3-	+	O	->	O2-	+	O2	;	Tgas	2.500e-010	0.000	0.000	//ref
+R57	O3-	+	O2	->	O-	+	O2	+	O2	;	Tgas	1.620e+000	-2.000	18260.000	//ref
+R58	O4-	+	O4+	->	O2	+	O2	+	O2	+	O2	;	Tgas	2.000e-006	0.000	0.000	//ref
+R59	O4-	+	O2	->	O2-	+	O2	+	O2	;	Tgas	3.150e+000	-2.000	6350.000	//ref
+R60	O4-	+	O	->	O3-	+	O2	;	Tgas	3.000e-010	0.000	0.000	//ref
+R61	O4-	+	O	->	O-	+	O2	+	O2	;	Tgas	1.000e-010	0.000	0.000	//ref
+R62	O4-	+	O2[a]	->	e	+	O2	+	O2	+	O2	;	Tgas	1.000e-010	0.000	0.000	//ref
+
+------------------------------------------------------------
+
+Oxygen_Reactions_with_Neutrals
+
+------------------------------------------------------------
+R63	O2[Hz]	+	O	->	O	+	O2	;	Tgas	8.850e-012	0.000	0.000	//Olya_data
+R64	O2[Hz]	+	O	->	O[1D]	+	O2[a]	;	Tgas	2.700e-032	0.000	0.000	//Olya_data
+R65	O2[Hz]	+	O	->	O[1D]	+	O2[b]	;	Tgas	1.350e-032	0.000	0.000	//Olya_data
+R66	O2[Hz]	+	O	->	O[1S]	+	O2	;	Tgas	2.000e-032	0.000	0.000	//Olya_data
+R67	O2[Hz]	+	O2	->	O2[a]	+	O2	;	Tgas	2.900e-033	0.000	0.000	//Olya_data
+R68	O2[Hz]	+	O2	->	O2[b]	+	O2	;	Tgas	8.100e-034	0.000	0.000	//Olya_data
+R69	O2[Hz]	+	O2	->	O2	+	O2	;	Tgas	2.900e-013	0.000	0.000	//Olya_data
+R70	O2[Hz]	+	O2[a]	->	O	+	O	+	O2	;	Tgas	0.000e+000	0.000	0.000	//Olya_data
+R71	O[1D]	+	O	->	O	+	O	;	Tgas	8.000e-012	0.000	0.000	//ref
+R72	O[1D]	+	O2	->	O	+	O2	;	Tgas	6.400e-012	0.000	-67.000	//ref
+R73	O[1D]	+	O2	->	O	+	O2[b]	;	Tgas	2.560e-011	0.000	-67.000	//ref
+R74	O[1S]	+	O2	->	O[1D]	+	O2	;	Tgas	1.200e-012	0.000	850.000	//ref
+R75	O[1S]	+	O2	->	O	+	O2[a]	;	Tgas	1.500e-012	0.000	850.000	//ref
+R76	O[1S]	+	O2	->	O	+	O2[b]	;	Tgas	7.300e-013	0.000	850.000	//ref
+R77	O[1S]	+	O2	->	O	+	O2[Hz]	;	Tgas	7.300e-013	0.000	850.000	//ref
+R78	O[1S]	+	O2[a]	->	O[1D]	+	O2[b]	;	Tgas	2.890e-011	0.000	0.000	//ref
+R79	O[1S]	+	O2[a]	->	O[1D]	+	O2[a]	;	Tgas	1.700e-012	0.000	0.000	//ref
+R80	O[1S]	+	O2[a]	->	O	+	O2[Hz]	;	Tgas	7.890e-011	0.000	0.000	//ref
+R81	O[1S]	+	O2[a]	->	O	+	O2	;	Tgas	3.000e-011	0.000	0.000	//ref
+R82	O[1S]	+	O2[a]	->	O	+	O	+	O	;	Tgas	3.230e-011	0.000	0.000	//ref
+R83	O[1S]	+	O	->	O[1D]	+	O	;	Tgas	5.000e-011	0.000	301.000	//ref
+R84	O2[b]	+	O	->	O2	+	O	;	Tgas	2.000e-013	0.000	0.000	//Olya_data
+R85	O2[b]	+	O2	->	O2[a]	+	O2	;	Tgas	1.500e-016	0.000	0.000	//ref
+R86	O2[b]	+	O3	->	O	+	O2	+	O2	;	Tgas	1.500e-011	0.000	0.000	//ref
+R87	O2[b]	+	O3	->	O2[a]	+	O3	;	Tgas	0.000e+000	0.000	0.000	//Olya_data
+R88	O2[b]	+	O3	->	O2	+	O3	;	Tgas	1.040e-011	0.000	0.000	//Olya_data
+R89	O2[a]	+	O2[a]	->	O2[b]	+	O2	;	Tgas	9.500e-028	3.800	-700.000	//ref
+R90	O2[a]	+	O	->	O2	+	O	;	Tgas	7.000e-016	0.000	0.000	//ref
+R91	O2[a]	+	O2	->	O2	+	O2	;	Tgas	2.300e-020	0.800	0.000	//ref
+R92	O2[a]	+	O	+	O2	->	O2	+	O	+	O2	;	Tgas	1.000e-032	0.000	0.000	//Proshina_2005
+R93	O2[a]	+	O	+	O2	->	O2[b]	+	O3	;	Tgas	0.000e+000	0.000	0.000	//ref
+R94	O2[a]	+	O3	->	O	+	O2	+	O2	;	Tgas	5.200e-011	0.000	2840.000	//ref
+R95	O	+	O3	->	O2[b]	+	O2	;	Tgas	7.680e-012	0.000	2060.000	//ref
+R96	O	+	O3	->	O2[a]	+	O2	;	Tgas	2.400e-013	0.000	2060.000	//ref
+R97	O	+	O3	->	O2	+	O2	;	Tgas	8.000e-014	0.000	2060.000	//ref
+R98	O2	+	O3	->	O	+	O2	+	O2	;	Tgas	7.300e-010	0.000	11435.000	//Ivanov_2000
+R99	O3	+	O3	->	O	+	O2	+	O3	;	Tgas	1.650e-009	0.000	11435.000	//Ivanov_2000
+R100	O	+	O	+	O2	->	O2[Hz]	+	O2	;	Tgas	1.200e-034	0.000	0.000	//ref
+R101	O	+	O	+	O2	->	O2[b]	+	O2	;	Tgas	7.600e-032	-1.000	170.000	//ref
+R102	O	+	O	+	O2	->	O2[a]	+	O2	;	Tgas	3.800e-031	-1.000	170.000	//ref
+R103	O	+	O	+	O2	->	O2	+	O2	;	Tgas	3.340e-030	-1.000	170.000	//ref
+R104	O	+	O	+	O2	->	O3	+	O	;	Tgas	2.150e-034	0.000	-345.000	//ref
+R105	O	+	O2	+	O2	->	O3	+	O2	;	Tgas	5.600e-029	-2.000	0.000	//ref
+R106	O	+	O3	+	O2	->	O3	+	O3	;	Tgas	1.300e-029	-2.000	0.000	//ref

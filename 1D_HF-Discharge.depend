@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1553709994 source:c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\1d_mainfun.cpp
+	"1D_MainFun.h"
+
+1552409560 c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\1d_mainfun.h
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<stdlib.h>
+	"Initials.h"
+	"1Dmesh.h"
+	"1DPoisson.h"
+	"1DTransport.h"
+	"Chemistry_calc.h"
+	"EEDF_calc.h"
+	"Gas_calc.h"
+
+1513949878 c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\initials.h
+
+1522429635 c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\1dmesh.h
+
+1545412939 c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\1dpoisson.h
+
+1553018996 c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\1dtransport.h
+
+1544544705 c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\chemistry_calc.h
+
+1553018119 c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\eedf_calc.h
+
+1552402740 c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\gas_calc.h
+
+1543488592 source:c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\1dmesh.cpp
+	"1D_MainFun.h"
+	"1Dmesh.h"
+
+1552409546 source:c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\1dpoisson.cpp
+	"1D_MainFun.h"
+	"1DPoisson.h"
+	"1Dmesh.h"
+	"Initials.h"
+
+1553102575 source:c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\1dtransport.cpp
+	"1D_MainFun.h"
+	"1DTransport.h"
+	"Gas_calc.h"
+	"1Dmesh.h"
+
+1552395437 source:c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\chemistry_calc.cpp
+	"1D_MainFun.h"
+	"Gas_calc.h"
+	"Chemistry_calc.h"
+	"1Dmesh.h"
+
+1553709994 source:c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\eedf_calc.cpp
+	"1D_MainFun.h"
+	"EEDF_calc.h"
+
+1552402721 source:c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\gas_calc.cpp
+	"1D_MainFun.h"
+	"Gas_calc.h"
+
+1553698417 source:c:\users\user\desktop\discharge_models\1d-discharge_develop\1d_hf_discharge\initials.cpp
+	"1D_MainFun.h"
+	"Initials.h"
+

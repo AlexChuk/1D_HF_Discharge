@@ -1,0 +1,12 @@
+
+*.o
+1D_HF-Discharge.cbp
+1D_HF-Discharge.depend
+1D_HF-Discharge.layout
+bin/Debug/1D_HF-Discharge.exe
+bin/Release/1D_HF-Discharge.exe
+Log_Chemistry.txt
+Log_CS.txt
+Log_EedfTable.txt
+Log_GasDB.txt
+Log_Kch.txt

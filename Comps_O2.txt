@@ -1,0 +1,66 @@
+------------------------------------------------------------
+Initial_file_to_1D-HF_Discharge_Model
+
+Put_Comments_here:
+
+Gamma_was:
+O - 2.0E-03
+O2[a] - 1.8E-04
+
+------------------------------------------------------------
+
+**********************Initial_data*****************************
+17		//Species
+3e-1	//Calculation_time
+1.0e-8	//Initial_gas-time_step
+300     //Frequency_of_data_saving
+50		//Pressure[Torr]
+300     //Initial_temperature[K]
+1.0	    //Length_[см]
+10.0     //Height_[см]
+300     //Wall_temperature[K]
+10     //Input_Power[W/cm^2]
+
+**********************Additional_data**************************
+cartesian  //геометрия("axial"/"cartesian")
+init    Save_data.txt //start-point("initial"/"saved")_file-name
+
+Cross_O2_lxtype_new.txt	//CS_data_file
+O2_chemistry_new-2_Herz+B1S+Ion.txt	//Chem_data_file
+
+stable //"stable/recalc"_EEDF-data_calculation_case
+O2_EEDF_Ke_Table.txt   //EEDF_table_data_file
+
+**********************Voltage-Supply***************************
+//voltage_left/right[Vext,V]_if=0(Vext)-Defined_if=1-Symmetry_if=2-Dielectric(Vext)_Frequency(W,MHz)_Eps1(Кварц)_Dep1[cm]
+0   0.0      0.0     3.7  0.2
+0   1.0    80.0    3.7  0.2
+
+**********************Species_data*****************************
+//Form:Number_Name_Init-fraction_Accomodation-Coeff(Left_Right):
+1	e	    1.0E-10		1.0	        1.0
+2	O+	    0.0	        1.0	        1.0
+3	O2+	    1.0E-10	    1.0	        1.0
+4	O3+	    0.0	        1.0 	    1.0
+5	O4+	    0.0	        1.0 	    1.0
+6	O-	    0.0	        1.0	        1.0
+7	O2-	    0.0	        1.0	        1.0
+8	O3-	    0.0	        1.0	        1.0
+9	O4-	    0.0	        1.0	        1.0
+10	O2[a]	0.0	        3.0E-04	    3.0E-04
+11	O2[b]	0.0	        0.1	        0.1
+12	O2[Hz]	0.0	        1.0	        1.0
+13	O	    0.0	        1.2E-03	    1.2E-03
+14	O[1D]	0.0	        1.0	        1.0
+15	O[1S]	0.0	        1.0	        1.0
+16	O3	    0.0	        0.0	        0.0
+17	O2	    1.0     	0.0	        0.0
+
+
+**********************Print_Rates_for_components****************
+e
+------------------------------------------------------------
+O
+O[1D]
+O2[a]
+O2[b]
